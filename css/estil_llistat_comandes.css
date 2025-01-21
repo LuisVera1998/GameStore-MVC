@@ -1,0 +1,303 @@
+/* --------------------------------------------------------- HEADER -------------------------------------------------- */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #f8f8f8; 
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 1;
+    max-height: 40px;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #1f1f1f, #333); 
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #06a9c9; 
+    text-shadow: 2px 2px 6px rgba(6, 169, 201, 0.5), 0px 0px 10px rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+header .logo h1:hover {
+    color: #04c4d9;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+header .cerca {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.search-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #06a9c9;
+    border-radius: 4px;
+    background-color: #1f1f1f;
+    color: white;
+    outline: none;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #06a9c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #04c4d9; 
+}
+
+.ident {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-left: 20px; 
+}
+
+.ident button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #06a9c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ident button:hover {
+    background-color: #04c4d9; 
+}
+
+
+.ident a {
+    margin-left: 15px;
+    color: #06a9c9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.ident a:hover {
+    color: #04c4d9;
+    text-decoration: underline;
+}
+
+
+
+.carrito-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carrito-menu img {
+    height: 70px;
+    width: auto; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carrito-menu img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.carrito-menu a {
+    display: block;
+    width: 70px;  
+    height: 70px; 
+    overflow: hidden; 
+    margin-left: -10px;
+}
+
+
+#userMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background-color: #06a9c9;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    display: none; 
+    overflow: hidden; 
+}
+
+#userMenu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#userMenu li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+
+}
+
+#userMenu li:hover {
+    background-color: #064551; 
+}
+
+#userMenuButton:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+/* --------------------------------------------------------- LLISTAT_COMANDES -------------------------------------------------- */
+
+
+.llistat-comandes {
+    background-color: #1f1f1f; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 900px; 
+}
+
+.llistat-comandes h2 {
+    color: #06a9c9; 
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.llistat-comandes > div {
+    background-color: #2c2c2c;  
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.llistat-comandes h3 {
+    color: #06a9c9;  
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.llistat-comandes p {
+    color: #f8f8f8;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+
+.llistat-comandes h4 {
+    color: #06a9c9;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+¡
+.llistat-comandes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.llistat-comandes li {
+    color: #f8f8f8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+.llistat-comandes li span {
+    font-weight: bold;
+    color: #06a9c9; 
+}
+
+
+.llistat-comandes p {
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* --------------------------------------------------------- CARRITO FIXE -------------------------------------------------- */
+
+
+#resum-carrito {
+    position: fixed;          
+    bottom: 20px;             
+    right: 20px;               
+    background-color: #4CAF50;    
+    color: white;              
+    padding: 15px 25px;        
+    border-radius: 8px;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    font-size: 16px;           
+    font-weight: bold;        
+    z-index: 1000;             
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;       
+}
+
+
+
+/* --------------------------------------------------------- RESPONSIVE -------------------------------------------------- */
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cerca{
+        margin-top: 10px;
+    }
+
+}
+
+
+

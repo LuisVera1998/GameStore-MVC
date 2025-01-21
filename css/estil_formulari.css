@@ -1,0 +1,295 @@
+/* --------------------------------------------------------- HEADER -------------------------------------------------- */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #f8f8f8; 
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 1;
+    max-height: 40px;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #1f1f1f, #333); 
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #06a9c9; 
+    text-shadow: 2px 2px 6px rgba(6, 169, 201, 0.5), 0px 0px 10px rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+header .logo h1:hover {
+    color: #04c4d9;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+header .cerca {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.search-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #06a9c9;
+    border-radius: 4px;
+    background-color: #1f1f1f;
+    color: white;
+    outline: none;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #06a9c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #04c4d9; 
+}
+
+.ident {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-left: 20px; 
+}
+
+.ident button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #06a9c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ident button:hover {
+    background-color: #04c4d9; 
+}
+
+
+.ident a {
+    margin-left: 15px;
+    color: #06a9c9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.ident a:hover {
+    color: #04c4d9;
+    text-decoration: underline;
+}
+
+
+
+.carrito-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carrito-menu img {
+    height: 70px;
+    width: auto; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carrito-menu img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.carrito-menu a {
+    display: block;
+    width: 70px;  
+    height: 70px; 
+    overflow: hidden; 
+    margin-left: -10px;
+}
+
+
+#userMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background-color: #06a9c9;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    display: none; 
+    overflow: hidden; 
+}
+
+#userMenu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#userMenu li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+
+}
+
+#userMenu li:hover {
+    background-color: #064551; 
+}
+
+#userMenuButton:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 10% */
+}
+
+
+
+
+/* --------------------------------------------------------- CARRITO FIXE -------------------------------------------------- */
+
+#resum-carrito {
+    position: fixed;          
+    bottom: 20px;             
+    right: 20px;               
+    background-color: #4CAF50;    
+    color: white;              
+    padding: 15px 25px;        
+    border-radius: 8px;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    font-size: 16px;           
+    font-weight: bold;        
+    z-index: 1000;             
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;       
+}
+
+/* --------------------------------------------------------- FORMULARI -------------------------------------------------- */
+
+
+#formulari {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 20px auto;
+    background-color: #1f1f1f; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+h1{
+    text-align: center;
+    color: #06a9c9; 
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#formulari label {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#formulari input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    border: 2px solid #06a9c9;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #f8f8f8;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#formulari input:focus {
+    border-color: #04c4d9;
+}
+
+#botoFormulari {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #06a9c9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#botoFormulari:hover {
+    background-color: #04c4d9;
+}
+
+#formulari .message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+/* --------------------------------------------------------- RESPONSIVE -------------------------------------------------- */
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cerca{
+        margin-top: 10px;
+    }
+
+}
+
+
+
